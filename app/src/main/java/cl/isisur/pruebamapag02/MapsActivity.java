@@ -39,19 +39,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         // Add a marker in Sydney and move the camera
 
-        LatLng Lugares = new LatLng(-36.603367, -72.091297);
-        LatLng Lugares1 = new LatLng(-36.604587, -72.083914);
-        LatLng Lugares2 = new LatLng(-36.6119628,-72.07268723);
-        LatLng Grez = new LatLng(-36.602517302817866,-72.10115649861793);
-        LatLng Felipe =new LatLng(-36.635414, -71.996863);
+        LatLng Lugar1 = new LatLng(-36.61042, -72.10074);
+        LatLng Lugar2 = new LatLng(-36.615036, -72.101774);
+        LatLng Lugar3 = new LatLng(-36.588602, -72.084995);
+        LatLng Lugar4 = new LatLng(-36.610559, -72.103945);
+        LatLng Alejandra =new LatLng(-36.627504, -72.029472);
 
 
-        mMap.addMarker(new MarkerOptions().position(Lugares).title("Heladeria y Cafeteria Cremossos"));
-        mMap.addMarker(new MarkerOptions().position(Lugares1).title("Cecinas Ramos Cordillera"));
-        mMap.addMarker(new MarkerOptions().position(Grez).title("Grez y Ulloa"));
-        mMap.addMarker(new MarkerOptions().position(Felipe).title("Felipe"));
+        mMap.addMarker(new MarkerOptions().position(Lugar1).title("Tostaduria Saldaña"));
+        mMap.addMarker(new MarkerOptions().position(Lugar2).title("Punto Granel"));
+        mMap.addMarker(new MarkerOptions().position(Lugar3).title("Mercado Trunkay"));
+        mMap.addMarker(new MarkerOptions().position(Lugar4).title("Frutos del País Claro de Luna"));
+        mMap.addMarker(new MarkerOptions().position(Alejandra).title("Alejandra"));
 
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(Lugares2));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(Lugar3));
         mMap.setMinZoomPreference(4.0F);
         mMap.setMaxZoomPreference(18.0f);
 
